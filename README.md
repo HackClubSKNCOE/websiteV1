@@ -1,4 +1,5 @@
-# Sumit Kolpekwar
+# websiteV1
+Version 1 of skn.hackclub website
 
 
 ## What's included
@@ -55,6 +56,7 @@ Wrote CSS to $HOME/projects/start-with-bulma/css/main.css
 * Modular, component-rich, compatible and easy to use 
 * CSS only, no excessive JQuery and keeps the files lite.
 * Responsive and well-documented
+
 
 
 
