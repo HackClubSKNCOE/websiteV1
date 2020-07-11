@@ -4,11 +4,16 @@
 @import "../node_modules/bulma/sass/utilities/initial-variables";
 
 //Example
-$body-background-color: #222b45;
-$body-color: #ffffff;
+$body-background-color: rgb(0, 0, 0);
+$body-color: rgb(255, 255, 255);
+
 
 
 // 4. Import the rest of Bulma
+$spacing-shortcuts: ("margin": "mg");
+$spacing-horizontal: "h";
+$spacing-vertical: null;
+$spacing-values: ("small": 10px, "medium": 30px, "large": 60px);
+
 
 @import "../node_modules/bulma/bulma";
-
