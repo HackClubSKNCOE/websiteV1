@@ -1,7 +1,50 @@
+.head-container {
+  position: absolute;
+  background: #000000;
+  transform: rotate(-11.33deg); }
+
+.head-container1 {
+  background: #000000;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column; }
+
+.text1 {
+  position: absolute;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 44px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ffffff; }
+
+.text2 {
+  position: absolute;
+  width: 1240px;
+  height: 30px;
+  left: 63px;
+  top: 343px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 72px;
+  line-height: 88px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+  backdrop-filter: blur(4px); }
+
 /*$spacing-shortcuts: ("margin": "mg");
 $spacing-horizontal: "h";
 $spacing-vertical: null;
-$spacing-values: ("small": 10px, "medium": 30px, "large": 60px);*/
+$spacing-values: ("small": 10px, "medium": 30px, "large": 60px);
+*/
 /*! bulma.io v0.9.0 | MIT License | github.com/jgthms/bulma */
 @keyframes spinAround {
   from {
@@ -7483,44 +7526,3 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 .footer {
   background-color: #fafafa;
   padding: 3rem 1.5rem 6rem; }
-
-  /* Yash*/
-
-  .nav-item1{
-    
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 29px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-
-    color: #FFFFFF;
-}
-.nav-item2{
-    
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 29px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-
-    color: #ffffff;
-}
-.bg{
-    
-position: absolute;
-width: 100%; 
-height:100%;
-left: -288px;
-top: -406.32px;
-
-
-background: #000000;
-transform: rotate(-11.33deg);
-}
