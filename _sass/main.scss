@@ -3,38 +3,61 @@
 // 1. Import the initial variables
 @import "../node_modules/bulma/sass/utilities/initial-variables";
 
-//Example
-$body-background-color: #fff;
-$body-color: #000;
+//Globals
+$black: #1f2d3d;
+$white: #ffffff;
+$red: #ec3750;
 
+$primary: $black;
+// $danger: #EC3750;
 
+$body-background-color: $white;
+$body-color: $black;
+
+$title-color: $black;
+$subtitle-color: $black;
+
+//LANDING PAGE
+.typewriter h3 span {
+  border-right: 0.05em solid $black; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  animation: blink-caret 0.5s step-end infinite;
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: $white;
+  }
+}
 
 // FOOTER
-$footer-color:#FF8C37;
-$footer-background-color:#000;
+$footer-color: $white;
+$footer-background-color: $black;
 // $footer-padding: 6rem 1.5rem 6rem;
-.footer{
-    background-size: 100% 100%;  
-    
-    p{
-        color: $footer-color;
-    }
-    img{
-        height: 64px;
-    }
+.footer {
+  background-size: 100% 100%;
+
+  p {
+    color: $footer-color;
+  }
+  img {
+    height: 64px;
+  }
 }
 
-
-
-article{
-    .card-image{
-        display: flex !important;
-        justify-content: center;
-        
-    }
+article {
+  .card-image {
+    display: flex !important;
+    justify-content: center;
+  }
 }
 
+//THIS PART SHOULD BE KEPT AT LAST ALWAYS.
 // 4. Import the rest of Bulma
 
 @import "../node_modules/bulma/bulma";
-
