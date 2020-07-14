@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="has-navbar-fixed-top">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -16,19 +16,321 @@
     />
   </head>
   <body>
-    <section class="hero  is-fullheight">
+    <nav
+      class="navbar is-fixed-top is-transparent"
+      role="navigation"
+      aria-label="main navigation"
+    >
+      <div class="navbar-brand">
+        <img src="img/HC LOGO-min.png" width="64" height="128" />
+        <a
+          role="button"
+          class="navbar-burger burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarBasicExample"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item">
+            Home
+          </a>
+
+          <a class="navbar-item">
+            Documentation
+          </a>
+
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              More
+            </a>
+
+            <div class="navbar-dropdown">
+              <a class="navbar-item">
+                About
+              </a>
+              <a class="navbar-item">
+                Jobs
+              </a>
+              <a class="navbar-item">
+                Contact
+              </a>
+              <hr class="navbar-divider" />
+              <a class="navbar-item">
+                Report an issue
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="buttons">
+              <a class="button is-primary">
+                <strong>Sign up</strong>
+              </a>
+              <a class="button is-light">
+                Log in
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+   
+    <section class="hero is-primary is-fullheight-with-navbar">
       <div class="hero-body">
-        <div class="container">
-          <h1 class="title">
-            Hello Amitesh And Lubna
-          </h1>
-          <h2 class="subtitle">
-           Check out docs at bulma.io to get started!
-          </h2>
+        <div class="container has-text-centered typewriter">
+          <h3 class="  subtitle is-3"> What can we do? <span class="has-text-danger"> Code</span></h3>
+          <h1 class="title is-1">Welcome to <span class="has-text-danger"> Hack Club</span>, SKNCOE</h1>
+          <div class="buttons has-addons is-centered mt-3">
+            <button class="button is-danger " >Join us</button>
+          </div>
         </div>
       </div>
     </section>
+
+    <section class="section" id="aboutClub">
+      <div class="container">
+        <h1 class="title">About Club (TAMAL TODO)</h1>
+        <h2 class="subtitle">
+          Something  <strong> Dope here</strong>
+        </h2>
+        <!-- TAMAL TODO REFER COLUMNS IN DOCS. CHECK FIGMA FOR UI -->
+
      
+      </div>
+    </section>
+
+
+
+    <section class="section" id="events">
+      <div class="container">
+        <h1 class="title">Ongoing Endeavours  (YASH TODO)</h1>
+        <h2 class="subtitle">
+          Something  <strong> MORE Dope here</strong>
+        </h2>
+        <!-- YASH TODO REFER https://bulmatemplates.github.io/bulma-templates/templates/cards.html -->
+
+     
+      </div>
+    </section>
+
+    <section class="section" id="aboutClub">
+      <div class="container">
+        <h1 class="title">START CODING START DOING  (TAMAL TODO)</h1>
+        <h2 class="subtitle">
+          Something  <strong>MORE'EST Dope here</strong>
+        </h2>
+        <!-- TAMAL TODO CHECK FIGMA. KEEP A RECTANGLE FOR NOW. -->
+
+     
+      </div>
+    </section>
+
+    <section class="section" id="team">
+      <div class="container">
+        <h1 class="title">Meet the team.</h1>
+        <h2 class="subtitle">
+          The people who <strong> made this possible.</strong>
+        </h2>
+
+        <div class="tile is-ancestor">
+          <div class="tile is-parent">
+            <article class="tile is-child box has-text-centered">
+              <div class="card-image">
+                <figure class="image is-128x128">
+                  <img
+                    class="is-rounded"
+                    src="img/alex-suprun-ZHvM3XIOHoE-unsplash.jpg"
+                    alt="Placeholder image"
+                  />
+                </figure>
+              </div>
+              <p class="title">Lubna Shaikh</p>
+              <p class="subtitle">Outreach Director</p>
+              <!-- <blockquote class="py-4"> Love to code,sometimes </blockquote> -->
+              <p class="subtitle is-4">
+                <span class="mx-2">
+                  <i class="fab fa-instagram"></i>
+                </span>
+                <span class="mx-2">
+                  <i class="fab fa-linkedin-in"></i>
+                </span>
+                <span class="mx-2">
+                  <i class="fab fa-github"></i>
+                </span>
+              </p>
+            </article>
+          </div>
+          <div class="tile is-parent">
+            <article class="tile is-child box has-text-centered">
+              <div class="card-image">
+                <figure class="image is-128x128">
+                  <img
+                    class="is-rounded"
+                    src="img/alex-suprun-ZHvM3XIOHoE-unsplash.jpg"
+                    alt="Placeholder image"
+                  />
+                </figure>
+              </div>
+              <p class="title">Amitesh Sakharwade</p>
+              <p class="subtitle">Public Relations Director</p>
+              <!-- <blockquote class="py-4"> Love to code,sometimes </blockquote> -->
+              <p class="subtitle is-4">
+                <span class="mx-2">
+                  <i class="fab fa-instagram"></i>
+                </span>
+                <span class="mx-2">
+                  <i class="fab fa-linkedin-in"></i>
+                </span>
+                <span class="mx-2">
+                  <i class="fab fa-github"></i>
+                </span>
+              </p>
+            </article>
+          </div>
+          <div class="tile is-parent">
+            <article class="tile is-child box has-text-centered">
+              <div class="card-image">
+                <figure class="image is-128x128">
+                  <img
+                    class="is-rounded"
+                    src="img/alex-suprun-ZHvM3XIOHoE-unsplash.jpg"
+                    alt="Placeholder image"
+                  />
+                </figure>
+              </div>
+              <p class="title">Tamal Samanta</p>
+              <p class="subtitle">VP of Growth</p>
+              <!-- <blockquote class="py-4"> Love to code,sometimes </blockquote> -->
+              <p class="subtitle is-4">
+                <span class="mx-2">
+                  <i class="fab fa-instagram"></i>
+                </span>
+                <span class="mx-2">
+                  <i class="fab fa-linkedin-in"></i>
+                </span>
+                <span class="mx-2">
+                  <i class="fab fa-github"></i>
+                </span>
+              </p>
+            </article>
+          </div>
+        </div>
+        <div class="tile is-ancestor">
+          <div class="tile is-parent">
+            <article class="tile is-child box has-text-centered">
+              <div class="card-image">
+                <figure class="image is-128x128">
+                  <img
+                    class="is-rounded"
+                    src="img/alex-suprun-ZHvM3XIOHoE-unsplash.jpg"
+                    alt="Placeholder image"
+                  />
+                </figure>
+              </div>
+              <p class="title">Yash Dewangan</p>
+              <p class="subtitle">Lead & VP of Curriculum</p>
+              <!-- <blockquote class="py-4"> Love to code,sometimes </blockquote> -->
+              <p class="subtitle is-4">
+                <span class="mx-2">
+                  <i class="fab fa-instagram"></i>
+                </span>
+                <span class="mx-2">
+                  <i class="fab fa-linkedin-in"></i>
+                </span>
+                <span class="mx-2">
+                  <i class="fab fa-github"></i>
+                </span>
+              </p>
+            </article>
+          </div>
+          <div class="tile is-parent">
+            <article class="tile is-child box has-text-centered">
+              <div class="card-image">
+                <figure class="image is-128x128">
+                  <img
+                    class="is-rounded"
+                    src="img/alex-suprun-ZHvM3XIOHoE-unsplash.jpg"
+                    alt="Placeholder image"
+                  />
+                </figure>
+              </div>
+              <p class="title">Atharva Kulkarni</p>
+              <p class="subtitle">Finance Director</p>
+              <!-- <blockquote class="py-4"> Love to code,sometimes </blockquote> -->
+              <p class="subtitle is-4">
+                <span class="mx-2">
+                  <i class="fab fa-instagram"></i>
+                </span>
+                <span class="mx-2">
+                  <i class="fab fa-linkedin-in"></i>
+                </span>
+                <span class="mx-2">
+                  <i class="fab fa-github"></i>
+                </span>
+              </p>
+            </article>
+          </div>
+          <div class="tile is-parent">
+            <article class="tile is-child box has-text-centered">
+              <div class="card-image">
+                <figure class="image is-128x128">
+                  <img
+                    class="is-rounded"
+                    src="img/alex-suprun-ZHvM3XIOHoE-unsplash.jpg"
+                    alt="Placeholder image"
+                  />
+                </figure>
+              </div>
+              <p class="title">Sumit Kolpekwar</p>
+              <p class="subtitle">Co-Lead & Operations Director</p>
+              <!-- <blockquote class="py-4"> Love to code,sometimes </blockquote> -->
+              <p class="subtitle is-4">
+                <span class="mx-2">
+                  <i class="fab fa-instagram"></i>
+                </span>
+                <span class="mx-2">
+                  <i class="fab fa-linkedin-in"></i>
+                </span>
+                <span class="mx-2">
+                  <i class="fab fa-github"></i>
+                </span>
+              </p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <div class="container">
+          <div class="columns">
+            <div class="column">
+              <img src="img/HC LOGO-min.png" height="64px" alt="" />
+            </div>
+            <div class="column">
+              <p class="title is-5">Hack Club</p>
+            </div>
+            <div class="column">
+              <p class="title is-5">Resources</p>
+            </div>
+            <div class="column">
+              <p class="title is-5">Join the Club</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script type="text/javascript" src="lib/main.js"></script>
   </body>
