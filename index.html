@@ -24,8 +24,8 @@
               >
               <div class="container ">
                 <div class="navbar-brand">
-                  <img src="img/logo1.png" width="64" height="128" /> 
-                  <p class="mt-5 ml-2 "  >Hack Club | SKNCOE</p>
+                  <img  class ="py-1"src="img/logo1.png" width="64" height="128" /> 
+                  <h5 class="mt-5 ml-2 title is-5 "  >Hack Club | SKNCOE</h5>
                   <a
                     role="button"
                     class="navbar-burger burger"
@@ -99,167 +99,140 @@
 
 
 
-    <div class="container">
-      <div class="section">
-        <div class="columns">
-          <div class="column has-text-centered">
-            <h1 class="title" style="color: rgb(0, 0, 0);">Ongoing Endeavours</h1><br>
+    <div class="section">
+      <div class="container">
+          <div class="columns">
+            <div class="column ">
+              <h1 class="title">Ongoing Endeavours</h1><br>
+            </div>
           </div>
-        </div>
-
-        <div id="app" class="row columns is-multiline ">
-          
-          <div v-for="card in cardData" key="card.id" class="column is-6">
+  
+          <div id="app" class="row columns is-multiline ">
             
-            <div class="card large">
-              <div class="card-image is-16by9">
-                <figure class="image">
-                  <img src="img/events.jpg" alt="Image">
-                </figure>
-              </div>
-              <div class="card-content">
-                <div class="media">
-                  <div class="media-left">
-                    <figure class="image is-48x48">
-                      <img src="#" alt="Image">
-                    </figure>
+            <div v-for="card in cardData" key="card.id" class="column is-3">
+              
+              <div class="card medium">
+                <div class="card-image is-16by9">
+                  <figure class="image">
+                    <img src="img/events.jpg" alt="Image">
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="media">
+                    
+                    <div class="media-content">
+                      <p class="title is-4 no-padding">Weekly AMAs</p>
+                      <p>
+                        <span class="title is-6">
+                          <a href="https://events.hackclub.com/"> Lorem Ipsum </a> </span> </p>
+                      
+                    </div>
                   </div>
-                  <div class="media-content">
-                    <p class="title is-4 no-padding">Lorem Ipsum</p>
-                    <p>
-                      <span class="title is-6">
-                        <a href="#"> Lorem Ipsum </a> </span> </p>
-                    <p class="subtitle is-6">Lorem Ipsum</p>
+                  <div class="content">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                      when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                      It has survived not only five centuries, but also the leap into electronic typesetting, 
+                      remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset 
+                      sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like 
+                      Aldus PageMaker including versions of Lorem Ipsum.
+                    <div class="background-icon"><span class="icon-twitter"></span></div>
                   </div>
                 </div>
-                <div class="content">
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                    when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                    It has survived not only five centuries, but also the leap into electronic typesetting, 
-                    remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset 
-                    sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like 
-                    Aldus PageMaker including versions of Lorem Ipsum.
-                  <div class="background-icon"><span class="icon-twitter"></span></div>
+              </div>
+            </div>
+            <div v-for="card in cardData" key="card.id" class="column is-3">
+              
+              <div class="card medium">
+                <div class="card-image is-16by9">
+                  <figure class="image">
+                    <img src="img/events.jpg" alt="Image">
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="media">
+                   
+                    <div class="media-content">
+                      <p class="title is-4 no-padding">Summer of Making</p>
+                      <p>
+                        <span class="title is-6">
+                          <a href="https://hackclub.com/"> Build Something Real This Summer. </a> </span> </p>
+                      
+                    </div>
+                  </div>
+                  <div class="content">
+                    Free hardware from GitHub.
+                    GitHub is sponsoring $50k worth of hardware grants for student makers, alongside support from Adafruit & Arduino for gear.
+                    <br>
+                    We want hardware hackers of any experience and no experience—whether it’ll be your first time soldering or your thousandth. Any 1) Plausible, 2) Cost-Effective, and 3) Inspired idea is eligible.
+                    <br>
+                    As you learn & make projects, share short photo/video updates each day & build a streak. You can even put custom CSS all over your profile & use your domain.
+                    <div class="background-icon"><span class="icon-twitter"></span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div v-for="card in cardData" key="card.id" class="column is-3">
+              
+              <div class="card medium">
+                <div class="card-image is-16by9">
+                  <figure class="image">
+                    <img src="img/events.jpg" alt="Image">
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="media">
+                  
+                    <div class="media-content">
+                      <p class="title is-4 no-padding">Hackathons</p>
+                      <p>
+                        <span class="title is-6">
+                          <a href="https://hackathons.hackclub.com/">(Online) Hackathons in 2020 </a> </span> </p>
+                     
+                    </div>
+                  </div>
+                  <div class="content">
+                    A curated list of high school hackathons with
+                    326 events in 20 states + 19 countries.
+                    Maintained by the Hack Club staff.
+                    <div class="background-icon"><span class="icon-twitter"></span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div v-for="card in cardData" key="card.id" class="column is-3">
+              
+              <div class="card large">
+                <div class="card-image is-16by9">
+                  <figure class="image">
+                    <img src="img/events.jpg" alt="Image">
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="media">
+                    
+                    <div class="media-content">
+                      <p class="title is-4 no-padding">Hack Night</p>
+                      <p>
+                        <span class="title is-6">
+                          <a href="https://hackclub.com/night/"> Join us for Hack Night </a> </span> </p>
+                     
+                    </div>
+                  </div>
+                  <div class="content">
+                    On Wednesday & Saturday nights, the Hack Club community of high school hackers gathers for Hack Night, a distributed nighttime hackathon and hangout.
+                    Meet some new people, build something cool, talk about it. There are no prizes or expectations—just have fun!
+                    <div class="background-icon"><span class="icon-twitter"></span></div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-
-          <div v-for="card in cardData" key="card.id" class="column is-6">
-            
-            <div class="card large">
-              <div class="card-image is-16by9">
-                <figure class="image">
-                  <img src="img/events.jpg" alt="Image">
-                </figure>
-              </div>
-              <div class="card-content">
-                <div class="media">
-                  <div class="media-left">
-                    <figure class="image is-48x48">
-                      <img src="#" alt="Image">
-                    </figure>
-                  </div>
-                  <div class="media-content">
-                    <p class="title is-4 no-padding">Lorem Ipsum</p>
-                    <p>
-                      <span class="title is-6">
-                        <a href="#"> Lorem Ipsum </a> </span> </p>
-                    <p class="subtitle is-6">Lorem Ipsum</p>
-                  </div>
-                </div>
-                <div class="content">
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                    when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                    It has survived not only five centuries, but also the leap into electronic typesetting, 
-                    remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset 
-                    sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like 
-                    Aldus PageMaker including versions of Lorem Ipsum.
-                  <div class="background-icon"><span class="icon-twitter"></span></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        
-        <div id="app" class="row columns is-multiline">
-          <div v-for="card in cardData" key="card.id" class="column is-6">
-            <div class="card large">
-              <div class="card-image is-16by9">
-                <figure class="image">
-                  <img src="img/events.jpg" alt="Image">
-                </figure>
-              </div>
-              <div class="card-content">
-                <div class="media">
-                  <div class="media-left">
-                    <figure class="image is-48x48">
-                      <img src="#" alt="Image">
-                    </figure>
-                  </div>
-                  <div class="media-content">
-                    <p class="title is-4 no-padding">Lorem Ipsum</p>
-                    <p>
-                      <span class="title is-6">
-                        <a href="#"> Lorem Ipsum </a> </span> </p>
-                    <p class="subtitle is-6">Lorem Ipsum</p>
-                  </div>
-                </div>
-                <div class="content">
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                    when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                    It has survived not only five centuries, but also the leap into electronic typesetting, 
-                    remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset 
-                    sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like 
-                    Aldus PageMaker including versions of Lorem Ipsum.
-                  <div class="background-icon"><span class="icon-twitter"></span></div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div v-for="card in cardData" key="card.id" class="column is-6">
-            <div class="card large">
-              <div class="card-image is-16by9">
-                <figure class="image">
-                  <img src="img/events.jpg" alt="Image">
-                </figure>
-              </div>
-              <div class="card-content">
-                <div class="media">
-                  <div class="media-left">
-                    <figure class="image is-48x48">
-                      <img src="#" alt="Image">
-                    </figure>
-                  </div>
-                  <div class="media-content">
-                    <p class="title is-4 no-padding">Lorem Ipsum</p>
-                    <p>
-                      <span class="title is-6">
-                        <a href="#"> Lorem Ipsum </a> </span> </p>
-                    <p class="subtitle is-6">Lorem Ipsum</p>
-                  </div>
-                </div>
-                <div class="content">
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                    when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                    It has survived not only five centuries, but also the leap into electronic typesetting, 
-                    remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset 
-                    sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like 
-                    Aldus PageMaker including versions of Lorem Ipsum.
-                  <div class="background-icon"><span class="icon-twitter"></span></div>
-                </div>
-              </div>
-            </div>
-          </div>
+  
+       
         </div>
       </div>
-    </div>
 
 
 
