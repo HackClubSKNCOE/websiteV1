@@ -57,6 +57,20 @@ article {
   }
 }
 
+.card {
+  overflow: hidden;
+  background: ghostwhite;
+  color: var(--bg);
+}
+
+.card.large {
+  border-radius: 5px;
+}
+
+.title.no-padding {
+  margin-bottom: 0 !important;
+}
+
 //THIS PART SHOULD BE KEPT AT LAST ALWAYS.
 // 4. Import the rest of Bulma
 
