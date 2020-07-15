@@ -24,6 +24,11 @@ article .card-image {
   display: flex !important;
   justify-content: center; }
 
+.column {
+  margin-left: 25px;
+  margin-right: 25px;
+  border: 1px solid #e4e4e4; }
+
 /*! bulma.io v0.9.0 | MIT License | github.com/jgthms/bulma */
 @keyframes spinAround {
   from {
