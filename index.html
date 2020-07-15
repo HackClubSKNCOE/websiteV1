@@ -19,72 +19,60 @@
   </head>
   <body>
     <nav
-      class="navbar is-fixed-top is-transparent"
-      role="navigation"
-      aria-label="main navigation"
-    >
-      <div class="navbar-brand">
-        <img id="navbarLogo"  onclick="window.location.href='/'" src="img/HC LOGO-min.png" width="64" height="128" />
-        <a
-          role="button"
-          class="navbar-burger burger"
-          aria-label="menu"
-          aria-expanded="false"
-          data-target="navbarBasicExample"
-        >
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
-      </div>
+                class="navbar is-fixed-top is-transparent"
+                role="navigation"
+                aria-label="main navigation"
+              >
+              <div class="container ">
+                <div class="navbar-brand">
+                  <img id="navbarLogo"  onclick="window.location.href='/'" src="img/logo1.png" width="64" height="128" />
+                  <h5 class="mt-5 ml-2 title is-5 "  >Hack Club | SKNCOE</h5>
+                  <a
+                    role="button"
+                    class="navbar-burger burger"
+                    aria-label="menu"
+                    aria-expanded="false"
+                    data-target="navbarBasicExample"
+                  >
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    
+                  </a>
+                  
+                </div>
 
-      <div id="navbarBasicExample" class="navbar-menu">
-        <div class="navbar-start">
-          <a class="navbar-item">
-            Home
-          </a>
+                <div id="navbarBasicExample" class="navbar-menu">
+                  <div class="navbar-start">
+                    
+                  </div>
 
-          <a class="navbar-item">
-            Documentation
-          </a>
+                  <div class="navbar-end">
+                   
+                    
+                        <a class="navbar-item">
+                          Home
+                        </a>
 
-          <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-link">
-              More
-            </a>
+                        <a class="navbar-item">
+                          About us
+                        </a>
 
-            <div class="navbar-dropdown">
-              <a class="navbar-item">
-                About
-              </a>
-              <a class="navbar-item">
-                Jobs
-              </a>
-              <a class="navbar-item">
-                Contact
-              </a>
-              <hr class="navbar-divider" />
-              <a class="navbar-item">
-                Report an issue
-              </a>
-            </div>
-          </div>
-        </div>
+                        <a class="navbar-item mr-3">
+                          Team
+                        </a>
 
-        <div class="navbar-end">
-          <div class="navbar-item">
-            <div class="buttons">
-              <a class="button is-primary">
-                <strong>Sign up</strong>
-              </a>
-              <a class="button is-light">
-                Log in
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </nav>
+                        
+                        <div class="buttons">
+                          <a class="button is-danger">
+                            <strong>Join us</strong>
+                          </a>
+                          
+                        </div>
+                  </div>
+                </div>
+              </div>
+              </nav>
 
     
     
@@ -109,31 +97,177 @@
         </section>
  
   
-    <section class="section mt-6" id="aboutClub">
+        <section class="section" id="aboutClub">
+          <div class="container">
+            <!--
+            <h1 class="title">About Club (TAMAL TODO)</h1>
+            <h2 class="subtitle">
+              Something  <strong> Dope here</strong>
+            </h2>
+            -->
+            <!-- TAMAL TODO REFER COLUMNS IN DOCS. CHECK FIGMA FOR UI -->
+            <div class="columns has-text-centered" style="margin-top: 25vh; margin-bottom: 25vh;padding-left: 90px; padding-right: 90px;">
+              <div class="column" style="padding: 0px; text-align: left; margin-right: 3rem; border: none;">
+                <span style="color: red; font-family: Montserrat; font-size: 2.5rem;">About our Club</span>
+                <br>
+                <p>Lorem ipsum something something that I've never read about except the very first 2 words, typing shit to keep it long cause we are descriptive.</p> 
+              </div>
+              <div class="column py-6" style="padding-right: 2rem; padding-left: 2rem;">
+                <i class="fas fa-desktop" style="font-size: 2rem; margin-bottom: 25px;"></i><br>
+                <span class="subtitle">Learn Web Dev</span><br>
+                <p style="text-align: justify ;">Lorem ipsum something something that I've never read about except the very first 2 words, typing shit to keep it long cause we are descriptive.</p>
+              </div>
+              <div class="column py-6" style="padding-right: 2rem; padding-left: 2rem;">
+                <i class="fas fa-mobile" style="font-size: 2rem; margin-bottom: 25px;"></i><br>
+                <span class="subtitle">Android/iOS Dev</span><br>
+                <p style="text-align: justify;">Lorem ipsum something something that I've never read about except the very first 2 words, typing shit to keep it long cause we are descriptive.</p>
+              </div>
+              <div class="column py-6" style="padding-right: 2rem; padding-left: 2rem;">
+                <img src="./img/Vector.png" style="width: 35px; margin-bottom: 15px;"><br>
+                <span class="subtitle">Machine Learning</span><br>
+                <p style="text-align: justify;">Lorem ipsum something something that I've never read about except the very first 2 words, typing shit to keep it long cause we are descriptive.</p>
+              </div>
+            </div>
+         
+          </div>
+        </section>
+
+
+
+    <div class="section">
       <div class="container">
-        <h1 class="title">About Club (TAMAL TODO)</h1>
-        <h2 class="subtitle">
-          Something  <strong> Dope here</strong>
-        </h2>
-        <!-- TAMAL TODO REFER COLUMNS IN DOCS. CHECK FIGMA FOR UI -->
-
-     
+          <div class="columns">
+            <div class="column ">
+              <h1 class="title">Ongoing Endeavours</h1><br>
+            </div>
+          </div>
+  
+          <div id="app" class="row columns is-multiline ">
+            
+            <div v-for="card in cardData" key="card.id" class="column is-3">
+              
+              <div class="card medium">
+                <div class="card-image is-16by9">
+                  <figure class="image">
+                    <img src="img/events.jpg" alt="Image">
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="media">
+                    
+                    <div class="media-content">
+                      <p class="title is-4 no-padding">Weekly AMAs</p>
+                      <p>
+                        <span class="title is-6">
+                          <a href="https://events.hackclub.com/"> Lorem Ipsum </a> </span> </p>
+                      
+                    </div>
+                  </div>
+                  <div class="content">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                      when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                      It has survived not only five centuries, but also the leap into electronic typesetting, 
+                      remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset 
+                      sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like 
+                      Aldus PageMaker including versions of Lorem Ipsum.
+                    <div class="background-icon"><span class="icon-twitter"></span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div v-for="card in cardData" key="card.id" class="column is-3">
+              
+              <div class="card medium">
+                <div class="card-image is-16by9">
+                  <figure class="image">
+                    <img src="img/events.jpg" alt="Image">
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="media">
+                   
+                    <div class="media-content">
+                      <p class="title is-4 no-padding">Summer of Making</p>
+                      <p>
+                        <span class="title is-6">
+                          <a href="https://hackclub.com/"> Build Something Real This Summer. </a> </span> </p>
+                      
+                    </div>
+                  </div>
+                  <div class="content">
+                    Free hardware from GitHub.
+                    GitHub is sponsoring $50k worth of hardware grants for student makers, alongside support from Adafruit & Arduino for gear.
+                    <br>
+                    We want hardware hackers of any experience and no experience—whether it’ll be your first time soldering or your thousandth. Any 1) Plausible, 2) Cost-Effective, and 3) Inspired idea is eligible.
+                    <br>
+                    As you learn & make projects, share short photo/video updates each day & build a streak. You can even put custom CSS all over your profile & use your domain.
+                    <div class="background-icon"><span class="icon-twitter"></span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div v-for="card in cardData" key="card.id" class="column is-3">
+              
+              <div class="card medium">
+                <div class="card-image is-16by9">
+                  <figure class="image">
+                    <img src="img/events.jpg" alt="Image">
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="media">
+                  
+                    <div class="media-content">
+                      <p class="title is-4 no-padding">Hackathons</p>
+                      <p>
+                        <span class="title is-6">
+                          <a href="https://hackathons.hackclub.com/">(Online) Hackathons in 2020 </a> </span> </p>
+                     
+                    </div>
+                  </div>
+                  <div class="content">
+                    A curated list of high school hackathons with
+                    326 events in 20 states + 19 countries.
+                    Maintained by the Hack Club staff.
+                    <div class="background-icon"><span class="icon-twitter"></span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div v-for="card in cardData" key="card.id" class="column is-3">
+              
+              <div class="card large">
+                <div class="card-image is-16by9">
+                  <figure class="image">
+                    <img src="img/events.jpg" alt="Image">
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="media">
+                    
+                    <div class="media-content">
+                      <p class="title is-4 no-padding">Hack Night</p>
+                      <p>
+                        <span class="title is-6">
+                          <a href="https://hackclub.com/night/"> Join us for Hack Night </a> </span> </p>
+                     
+                    </div>
+                  </div>
+                  <div class="content">
+                    On Wednesday & Saturday nights, the Hack Club community of high school hackers gathers for Hack Night, a distributed nighttime hackathon and hangout.
+                    Meet some new people, build something cool, talk about it. There are no prizes or expectations—just have fun!
+                    <div class="background-icon"><span class="icon-twitter"></span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+       
+        </div>
       </div>
-    </section>
-
-
-
-    <section class="section" id="events">
-      <div class="container">
-        <h1 class="title">Ongoing Endeavours  (YASH TODO)</h1>
-        <h2 class="subtitle">
-          Something  <strong> MORE Dope here</strong>
-        </h2>
-        <!-- YASH TODO REFER https://bulmatemplates.github.io/bulma-templates/templates/cards.html -->
-
-     
-      </div>
-    </section>
 
     <section class="section" id="aboutClub">
       <div class="container">
@@ -244,7 +378,7 @@
                 <figure class="image is-128x128">
                   <img
                     class="is-rounded"
-                    src="img/alex-suprun-ZHvM3XIOHoE-unsplash.jpg"
+                    src="img/Yash.png"
                     alt="Placeholder image"
                   />
                 </figure>
@@ -271,7 +405,7 @@
                 <figure class="image is-128x128">
                   <img
                     class="is-rounded"
-                    src="img/alex-suprun-ZHvM3XIOHoE-unsplash.jpg"
+                    src="img/kulkarni.png"
                     alt="Placeholder image"
                   />
                 </figure>
@@ -328,7 +462,7 @@
         <div class="container">
           <div class="columns">
             <div class="column">
-              <img src="img/HC LOGO-min.png" height="64px" alt="" />
+              <img src="img/logo1.png" height="64px" alt="" />
             </div>
             <div class="column">
               <p class="title is-5">Hack Club</p>
@@ -338,6 +472,36 @@
             </div>
             <div class="column">
               <p class="title is-5">Join the Club</p>
+              <p class="subtitle is-4 mt-1">
+                <span class="mx-2">
+                  <i class="fab fa-twitter"></i>
+                  </span>
+                <span class="mx-2">
+                  <i class="fab fa-instagram"></i>
+                </span>
+                <span class="mx-2">
+                  <i class="fab fa-linkedin-in"></i>
+                </span>
+                <span class="mx-2">
+                  <i class="fab fa-github"></i>
+                </span>
+               
+              </p>
+              <p class="subtitle is-4 ">
+                <span class="mx-2">
+                  <i class="fab fa-discord"></i>
+                  </span>
+                <span class="mx-2">
+                  <i class="fab fa-youtube"></i>
+                </span>
+                <span class="mx-2">
+                  <i class="fab fa-telegram"></i>
+                </span>
+                <span class="mx-2">
+                  <i class="fab fa-facebook"></i>
+                </span>
+               
+              </p>
             </div>
           </div>
         </div>
