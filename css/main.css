@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth; }
+
 .typewriter h3 span {
   border-right: 0.05em solid #1f2d3d;
   /* The typwriter cursor */
@@ -60,6 +63,12 @@
     color: #ffffff; }
   .footer img {
     height: 64px; }
+  .footer a {
+    color: #ffffff;
+    display: block; }
+  .footer a:hover, .footer span:hover {
+    color: #ec3750;
+    font-size: 1.2rem; }
 
 article .card-image {
   display: flex !important;

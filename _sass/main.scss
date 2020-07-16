@@ -7,15 +7,24 @@
 $black: #1f2d3d;
 $white: #ffffff;
 $red: #ec3750;
-
 $primary: $black;
-// $danger: #EC3750;
-
 $body-background-color: $white;
 $body-color: $black;
-
 $title-color: $black;
 $subtitle-color: $black;
+
+html {
+	scroll-behavior: smooth;
+}
+
+
+
+
+
+
+
+
+
 
 //LANDING PAGE
 .typewriter h3 span {
@@ -32,6 +41,8 @@ $subtitle-color: $black;
     color: $red;
   }
 }
+
+
 
 .anim {
   width: 100%;
@@ -95,6 +106,14 @@ $footer-background-color: $black;
   }
   img {
     height: 64px;
+  }
+  a{
+    color: $footer-color;
+    display: block;
+  }
+  a:hover,span:hover{
+    color: $red;
+    font-size: 1.2rem;
   }
 }
 

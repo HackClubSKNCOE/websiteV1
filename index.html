@@ -25,15 +25,16 @@
                 aria-label="main navigation"
               >
               <div class="container ">
-                <div class="navbar-brand">
-                  <img id="navbarLogo"  onclick="window.location.href='/'" src="img/logo1.png" width="64" height="128" />
-                  <h5 class="mt-5 ml-2 title is-5 "  >Hack Club | SKNCOE</h5>
+                <div class="navbar-brand py-1 px-1">
+                  <img id="navbarLogo  "  onclick="window.location.href='index.html'" src="img/logo1.png" width="64"  />
+                 
                   <a
                     role="button"
-                    class="navbar-burger burger"
+                    class="navbar-burger burger mt-1 px-1"
                     aria-label="menu"
                     aria-expanded="false"
                     data-target="navbarBasicExample"
+                    
                   >
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
@@ -45,27 +46,27 @@
 
                 <div id="navbarBasicExample" class="navbar-menu">
                   <div class="navbar-start">
-                    
+                    <h5 class="mt-5 ml-2 title is-5 "  >Hack Club | SKNCOE</h5>
                   </div>
 
                   <div class="navbar-end">
                    
                     
-                        <a class="navbar-item">
+                        <a onclick="scrollToSection('canvas')"  class="navbar-item">
                           Home
                         </a>
 
-                        <a class="navbar-item">
+                        <a  href="about.html"  class="navbar-item">
                           About us
                         </a>
 
-                        <a class="navbar-item mr-3">
+                        <a onclick="scrollToSection('team')"  class="navbar-item mr-3">
                           Team
                         </a>
 
                         
                         <div class="buttons">
-                          <a class="button is-danger">
+                          <a  href="join.html" class="button is-danger">
                             <strong>Join us</strong>
                           </a>
                           
@@ -89,7 +90,9 @@
               <h3 class="  subtitle is-3"> What can we do? <span class="has-text-danger"> Code</span></h3>
               <h1 class="title is-1">Welcome to <span class="has-text-danger"> Hack Club</span>, SKNCOE</h1>
               <div class="buttons has-addons is-centered mt-3">
-                <button class="button is-danger " onclick="window.location.href='/join.html'" id="herobtn">Join us</button>
+                <a  href="join.html" class="button is-danger">
+                  <strong>Join us</strong>
+                </a>
               </div>
             
             </div>
@@ -468,13 +471,20 @@
               <img src="img/logo1.png" height="64px" alt="" />
             </div>
             <div class="column">
-              <p class="title is-5">Hack Club</p>
+              <p class="title is-4">Hack Club</p>
+               
+              <a href="https://hackclub.com/philosophy/" target="_blank" class="subtitle is-6 mt-1">Philosophy </a>
+              <a href="https://hackclub.com/slack/" target="_blank" class="subtitle is-6">Community </a>
             </div>
             <div class="column">
-              <p class="title is-5">Resources</p>
+              <p class="title is-4">Resources</p>
+              <a href="https://hackclub.com/night/" target="_blank" class="subtitle is-6 mt-1">Hack Night </a>
+              <a href="https://hackclub.com/conduct/" target="_blank" class="subtitle is-6">Code of Conduct </a>
+              <a href="https://hackathons.hackclub.com/" target="_blank" class="subtitle is-6">Hackathons </a>
+              <a href="https://hackclub.com/map/" target="_blank" class="subtitle is-6">Map </a>
             </div>
             <div class="column">
-              <p class="title is-5">Join the Club</p>
+              <p class="title is-4">Join the Club</p>
               <p class="subtitle is-4 mt-1">
                 <span class="mx-2">
                   <i class="fab fa-twitter"></i>
