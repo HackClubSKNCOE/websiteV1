@@ -79,6 +79,42 @@ article .card-image {
   margin-right: 25px;
   border: 1px solid #e4e4e4; }
 
+.rekt {
+  margin-bottom: 20vh;
+  margin-top: 20vh;
+  width: 100vw;
+  height: 60vh;
+  background-color: #1f2d3d;
+  transform: skewY(178deg); }
+
+.c2atext {
+  color: white;
+  font-family: 'Montserrat';
+  text-align: center;
+  font-size: 4rem; }
+
+.tile {
+  margin-left: 20px;
+  margin-right: 20px; }
+
+@media screen and (max-width: 1160px) {
+  #aboutClub {
+    flex-direction: column; } }
+
+.cont2 {
+  display: flex; }
+  .cont2 .tile {
+    min-width: 20vw; }
+
+@media screen and (max-width: 768px) {
+  .cont2 {
+    flex-direction: column; }
+    .cont2 .tile {
+      width: 75vw;
+      position: relative;
+      left: 50%;
+      transform: translate(-50%, 0); } }
+
 /*! bulma.io v0.9.0 | MIT License | github.com/jgthms/bulma */
 @keyframes spinAround {
   from {

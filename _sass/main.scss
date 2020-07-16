@@ -134,6 +134,51 @@ article {
     border: 1px solid rgb(228, 228, 228);
   }
 }
+.rekt {
+  margin-bottom: 20vh;
+  margin-top: 20vh;
+  width: 100vw;
+  height: 60vh;
+  background-color: $black;
+  transform: skewY(178deg);
+}
+
+.c2atext {
+  color: white;
+  font-family: 'Montserrat';
+  text-align: center;
+  font-size: 4rem;
+}
+
+.tile {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 1160px) {
+  #aboutClub {
+    flex-direction: column;
+  }
+}
+
+.cont2 {
+  display: flex;
+  .tile {
+    min-width: 20vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cont2 {
+    flex-direction: column;
+    .tile {
+      width: 75vw;
+      position: relative;
+      left: 50%;
+      transform: translate(-50%,0);
+    }
+  }
+}
 //THIS PART SHOULD BE KEPT AT LAST ALWAYS.
 // 4. Import the rest of Bulma
 
