@@ -37,9 +37,7 @@ html {
   clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
   z-index: 1;
   position: relative;
-  .title{
-    color: $red;
-  }
+ 
 }
 
 
@@ -125,60 +123,60 @@ article {
 }
 
 
-// tamal
-#aboutClub{
-  .column {
-    margin-left: 25px;
-    margin-right: 25px;
 
-    border: 1px solid rgb(228, 228, 228);
-  }
-}
-.rekt {
-  margin-bottom: 20vh;
-  margin-top: 20vh;
-  width: 100vw;
-  height: 60vh;
+#C2A{
   background-color: $black;
-  transform: skewY(178deg);
-}
+  // background-image: url('../img/bg\ fyll-min.jpg') ;
+  background-repeat: no-repeat;
+  background-position: center;
 
-.c2atext {
-  color: white;
-  font-family: 'Montserrat';
-  text-align: center;
-  font-size: 4rem;
-}
+  position: relative;
+  z-index: 1;
+  .title{
+    color: $white ;
 
-.tile {
-  margin-left: 20px;
-  margin-right: 20px;
-}
+  }
+  &:before {
+    background: inherit;
+    content: "";
+    display: block;
+    height: 30%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    -webkit-backface-visibility: hidden; // for Chrome Windows
+    backface-visibility: hidden;
+  }
+  &:after {
+    background: inherit;
+    content: "";
+    display: block;
+    height: 50%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    -webkit-backface-visibility: hidden; // for Chrome Windows
+    backface-visibility: hidden;
+  }
 
-@media screen and (max-width: 1160px) {
-  #aboutClub {
-    flex-direction: column;
+  &:before {
+    top: 0;
+    transform: skewY(178deg);
+    transform-origin: 0 100%;
+  }
+  &:after{
+    bottom: -10;
+    transform: skewY(178deg);
+    transform-origin: 0 100%;
   }
 }
 
-.cont2 {
-  display: flex;
-  .tile {
-    min-width: 20vw;
-  }
+label{
+  color: $black !important;
 }
 
-@media screen and (max-width: 768px) {
-  .cont2 {
-    flex-direction: column;
-    .tile {
-      width: 75vw;
-      position: relative;
-      left: 50%;
-      transform: translate(-50%,0);
-    }
-  }
-}
 //THIS PART SHOULD BE KEPT AT LAST ALWAYS.
 // 4. Import the rest of Bulma
 
