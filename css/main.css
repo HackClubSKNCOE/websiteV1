@@ -12,8 +12,6 @@ html {
   clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
   z-index: 1;
   position: relative; }
-  .hero .title {
-    color: #ec3750; }
 
 .anim {
   width: 100%;
@@ -74,46 +72,47 @@ article .card-image {
   display: flex !important;
   justify-content: center; }
 
-#aboutClub .column {
-  margin-left: 25px;
-  margin-right: 25px;
-  border: 1px solid #e4e4e4; }
-
-.rekt {
-  margin-bottom: 20vh;
-  margin-top: 20vh;
-  width: 100vw;
-  height: 60vh;
+#C2A {
   background-color: #1f2d3d;
-  transform: skewY(178deg); }
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  z-index: 1; }
+  #C2A .title {
+    color: #ffffff; }
+  #C2A:before {
+    background: inherit;
+    content: "";
+    display: block;
+    height: 30%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden; }
+  #C2A:after {
+    background: inherit;
+    content: "";
+    display: block;
+    height: 50%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden; }
+  #C2A:before {
+    top: 0;
+    transform: skewY(178deg);
+    transform-origin: 0 100%; }
+  #C2A:after {
+    bottom: -10;
+    transform: skewY(178deg);
+    transform-origin: 0 100%; }
 
-.c2atext {
-  color: white;
-  font-family: 'Montserrat';
-  text-align: center;
-  font-size: 4rem; }
-
-.tile {
-  margin-left: 20px;
-  margin-right: 20px; }
-
-@media screen and (max-width: 1160px) {
-  #aboutClub {
-    flex-direction: column; } }
-
-.cont2 {
-  display: flex; }
-  .cont2 .tile {
-    min-width: 20vw; }
-
-@media screen and (max-width: 768px) {
-  .cont2 {
-    flex-direction: column; }
-    .cont2 .tile {
-      width: 75vw;
-      position: relative;
-      left: 50%;
-      transform: translate(-50%, 0); } }
+label {
+  color: #1f2d3d !important; }
 
 /*! bulma.io v0.9.0 | MIT License | github.com/jgthms/bulma */
 @keyframes spinAround {
