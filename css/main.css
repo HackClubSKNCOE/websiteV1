@@ -1,6 +1,12 @@
 html {
   scroll-behavior: smooth; }
 
+.navbar a:hover, .navbar span:hover {
+  color: #ec3750 !important; }
+
+.bhai {
+  color: #ec3750; }
+
 .typewriter h3 span {
   border-right: 0.05em solid #1f2d3d;
   /* The typwriter cursor */
